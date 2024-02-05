@@ -14,6 +14,7 @@ public class HighScore : MonoBehaviour
         }
         // Assign the high score to HighScore
         PlayerPrefs.SetInt("HighScore", score);
+
     }
 
     // Update is called once per frame
