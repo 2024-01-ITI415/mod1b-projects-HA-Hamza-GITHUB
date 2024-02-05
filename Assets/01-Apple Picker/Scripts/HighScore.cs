@@ -24,7 +24,7 @@ public class HighScore : MonoBehaviour
     // Update is called once per frame
     void Update () {
         TMP_Text gt = this.GetComponent<TMP_Text>();
-        gt.text = "High Score: " + score;
+        gt.text = "HighScore: " + score;
         // Update the PlayerPrefs HighScore if 
         if (score > PlayerPrefs.GetInt("HighScore"))
         {
