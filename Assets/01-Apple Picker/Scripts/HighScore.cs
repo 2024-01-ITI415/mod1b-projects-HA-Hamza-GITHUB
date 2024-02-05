@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
+using TMPro;
 
 public class HighScore : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class HighScore : MonoBehaviour
 
     // Update is called once per frame
     void Update () {
-        Text gt = this.GetComponent<Text>();
+        TMP_Text gt = this.GetComponent<TMP_Text>();
         gt.text = "High Score: " + score;
         // Update the PlayerPrefs HighScore if 
         if (score > PlayerPrefs.GetInt("HighScore"))
