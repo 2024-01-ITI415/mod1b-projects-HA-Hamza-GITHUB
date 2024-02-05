@@ -7,7 +7,10 @@ using TMPro;
 public class HighScore : MonoBehaviour
 {
     static public int    score = 1000;
+    
+    void Start(){
 
+    }
     void Awake() {                             
         // If the PlayerPrefs HighScore already
         if (PlayerPrefs.HasKey("HighScore")) {

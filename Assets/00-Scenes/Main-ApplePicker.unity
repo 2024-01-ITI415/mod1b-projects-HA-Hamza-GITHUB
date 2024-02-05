@@ -358,7 +358,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'HighScore: 1000'
+  m_text: 'HighScore: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -802,6 +802,10 @@ PrefabInstance:
     - target: {fileID: -2940998556325333845, guid: b8a146daaeaa4744ab9eab69310cc8f5, type: 3}
       propertyPath: chanceToChangeDirection
       value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -2940998556325333845, guid: b8a146daaeaa4744ab9eab69310cc8f5, type: 3}
+      propertyPath: secondsBetweenAppleDrop
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 999432874763204610, guid: b8a146daaeaa4744ab9eab69310cc8f5, type: 3}
       propertyPath: m_Layer
