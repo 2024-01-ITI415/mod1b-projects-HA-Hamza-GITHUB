@@ -14,19 +14,16 @@ public class HighScore : MonoBehaviour
         }
         // Assign the high score to HighScore
         PlayerPrefs.SetInt("HighScore", score);
-
-        // Update the PlayerPrefs HighScore if 
-        if (score > PlayerPrefs.GetInt("HighScore")) {
-            PlayerPrefs.SetInt("HighScore", score);
-        }
-
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update () {
         Text gt = this.GetComponent<Text>();
-        gt.text = "High Score: "+score;
+        gt.text = "High Score: " + score;
+        // Update the PlayerPrefs HighScore if 
+        if (score > PlayerPrefs.GetInt("HighScore"))
+        {
+            PlayerPrefs.SetInt("HighScore", score);
+        }
     }
-
 }
