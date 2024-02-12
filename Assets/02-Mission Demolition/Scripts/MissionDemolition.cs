@@ -52,7 +52,7 @@ public class MissionDemolition : MonoBehaviour{
         castle.transform.position = castlePos;
         shotsTaken = 0 ;
         // Reset the camera
-        SwitchView("wShow Both" );
+        SwitchView("Show Both" );
         ProjectileLine.S.Clear();
         // Reset the goal
         Goal.goalMet = false;
@@ -62,7 +62,7 @@ public class MissionDemolition : MonoBehaviour{
 
      void UpdateGUI() {
         // Show the data in the GUITexts
-        uitLevel.text = "Level: " +(level+1 )+ "of " +levelMax;
+        uitLevel.text = "Level: " +(level+1 )+ " of " +levelMax;
         uitShots.text = "Shots Taken: " +shotsTaken;
     }
 

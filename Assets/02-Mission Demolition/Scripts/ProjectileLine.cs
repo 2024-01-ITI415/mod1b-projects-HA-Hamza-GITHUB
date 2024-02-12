@@ -65,11 +65,11 @@ public class ProjectileLine : MonoBehaviour {
 		// Enables the LineRenderer
 		line.enabled = true;
 		} else {
-		// Normal behavior of adding a point
-		points.Add( pt );
-		line.positionCount = points.Count;
-		line.SetPosition( points.Count-1, lastPoint );
-		line.enabled = true;
+			// Normal behavior of adding a point
+			points.Add( pt );
+			line.positionCount = points.Count;
+			line.SetPosition( points.Count-1, lastPoint );
+			line.enabled = true;
 		}
 	}
 
