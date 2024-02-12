@@ -93,20 +93,21 @@ public class MissionDemolition : MonoBehaviour{
         if (eView =="") {
             eView = uitButton.text;
         }
+
         showing = eView;
         switch (showing) {
-            case"Show Slingshot" :
-            FollowCam.POI = null;
-            uitButton.text = "Show Castle";
-            break;
-            case"Show Castle":
-            FollowCam.POI = S.castle;
-            uitButton.text = "Show Both" ;
-            break;
-            case"Show Both" :
-            FollowCam.POI = GameObject.Find("ViewBoth" );
-            uitButton.text = "Show Slingshot";
-            break;
+            case "Show Slingshot":
+                FollowCam.POI = null;
+                uitButton.text = "Show Castle";
+                break;
+            case "Show Castle":
+                FollowCam.POI = S.castle;
+                uitButton.text = "Show Both" ;
+                break;
+            case "Show Both" :
+                FollowCam.POI = GameObject.Find("ViewBoth");
+                uitButton.text = "Show Slingshot";
+                break;
         }
     }
 
