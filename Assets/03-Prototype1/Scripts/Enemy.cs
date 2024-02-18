@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
     [Header("Set in Inspector")]
-    // Prefab for instantiating apples
-    public GameObject applePrefab;
+    // Prefab for instantiating projectiles
+    public GameObject eprojectilePrefab;
 
     // Speed at which the AppleTree moves
     public float speed = 1f;
@@ -17,17 +17,17 @@ public class Enemy : MonoBehaviour {
     public float chanceToChangeDirection;
 
     // Rate at which Apples will be instantiate
-    public float secondsBetweenAppleDrop = 1f;
+    public float secondsBetweenProjectileShot = 1f;
 
     void Start () {
-        // Dropping apples every second
-        Invoke("DropApple",2f);
+        // Shoot projectiles every second
+        Invoke("ShootProjectile",2f);
     }
 
-     void DropApple() {                         
-        GameObject apple = Instantiate<GameObject>(applePrefab);
-        apple.transform.position = transform.position;
-        Invoke("DropApple", secondsBetweenAppleDrop);
+     void ShootProjectile() {                         
+        GameObject eprojectile = Instantiate<GameObject>(eprojectilePrefab);
+        eprojectile.transform.position = transform.position;
+        Invoke("ShootProjectile", secondsBetweenProjectileShot);
     }
 
     void Update () {

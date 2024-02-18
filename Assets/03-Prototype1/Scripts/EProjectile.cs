@@ -17,10 +17,10 @@ public class EProjectile : MonoBehaviour
         if (transform.position.y < bottomY) {
             Destroy(this.gameObject); 
             
-            // Get a reference to the ApplePick
-            ApplePicker apScript = Camera.main.GetComponent<ApplePicker>();
-            // Call the public AppleDestroyed()
-            apScript.AppleDestroyed(); 
+            // Get a reference to the Prototype
+            Prototype apScript = Camera.main.GetComponent<Prototype>();
+            // Call the public ProjectileDestroyed()
+            apScript.ProjectileDestroyed(); 
         }
     }
 }
