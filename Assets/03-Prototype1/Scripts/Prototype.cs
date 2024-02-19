@@ -14,7 +14,6 @@ public class Prototype : MonoBehaviour
         foreach (GameObject tGO in tProjectileArray) {
             Destroy(tGO);
         }
-
     }
 
     

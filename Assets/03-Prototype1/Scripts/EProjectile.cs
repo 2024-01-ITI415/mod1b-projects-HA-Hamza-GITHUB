@@ -18,9 +18,9 @@ public class EProjectile : MonoBehaviour
             Destroy(this.gameObject); 
             
             // Get a reference to the Prototype
-            Prototype apScript = Camera.main.GetComponent<Prototype>();
+            Prototype ptScript = Camera.main.GetComponent<Prototype>();
             // Call the public ProjectileDestroyed()
-            apScript.ProjectileDestroyed(); 
+            ptScript.ProjectileDestroyed(); 
         }
     }
 }

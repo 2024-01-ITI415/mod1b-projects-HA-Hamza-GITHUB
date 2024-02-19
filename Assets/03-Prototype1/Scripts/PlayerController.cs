@@ -30,11 +30,17 @@ public class PlayerController : MonoBehaviour
    
    void OnTriggerEnter(Collider other) 
    {
-        if (other.CompareTag("EProjectile")) 
-       {
+        if (other.gameObject.CompareTag("EProjectile"))
+        {
+            Debug.Log("Connected");
+            Invoke("ReloadScene", 2.0f);
 
-            SceneManager.LoadScene("Main-Prototype 1");
-       }   
+            // Call the ProjectileDestroyed method from the Prototype script
+            //FindObjectOfType<Prototype>().ProjectileDestroyed();
+
+            // Reload the scene
+            //SceneManager.LoadScene("Main-Prototype 1");
+        }
    }
     
     void OnMove (InputValue movementValue)
@@ -43,4 +49,13 @@ public class PlayerController : MonoBehaviour
         movementX = movementVector.x; 
         movementY = movementVector.y; 
    }
+
+       private void ReloadScene()
+    {
+        // Get the current scene index
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        // Reload the current scene
+        SceneManager.LoadScene(currentSceneIndex);
+    }
 }
