@@ -32,8 +32,8 @@ public class PlayerController : MonoBehaviour
    {
         if (other.gameObject.CompareTag("EProjectile"))
         {
-            Debug.Log("Connected");
-            Invoke("ReloadScene", 2.0f);
+            Debug.Log("Collided, GG");
+            Invoke("ReloadScene", 0f);
 
             // Call the ProjectileDestroyed method from the Prototype script
             //FindObjectOfType<Prototype>().ProjectileDestroyed();

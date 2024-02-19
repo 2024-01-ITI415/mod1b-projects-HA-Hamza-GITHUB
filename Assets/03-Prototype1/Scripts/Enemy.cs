@@ -7,17 +7,17 @@ public class Enemy : MonoBehaviour {
     // Prefab for instantiating projectiles
     public GameObject eprojectilePrefab;
 
-    // Speed at which the AppleTree moves
-    public float speed = 1f;
+    // Speed at which the Enemy moves
+    public float speed = 5f;
 
-    // Distance where AppleTree turns around
-    public float leftAndRightEdge = 10f;
+    // Distance where Enemy turns around
+    public float leftAndRightEdge = 7f;
 
-    // Chance that the AppleTree will change di
+    // Chance that the Enemy will change di
     public float chanceToChangeDirection;
 
-    // Rate at which Apples will be instantiate
-    public float secondsBetweenProjectileShot = 1f;
+    // Rate at which Projectiles will be instantiate
+    public float secondsBetweenProjectileShot = 10f;
 
     void Start () {
         // Shoot projectiles every second
@@ -25,8 +25,10 @@ public class Enemy : MonoBehaviour {
     }
 
      void ShootProjectile() {                         
-        GameObject eprojectile = Instantiate<GameObject>(eprojectilePrefab);
-        eprojectile.transform.position = transform.position;
+        // Instantiate the EProjectile in front of the Enemy
+        Vector3 spawnPosition = transform.position - transform.forward * 2f;
+        GameObject eprojectile = Instantiate<GameObject>(eprojectilePrefab, spawnPosition, Quaternion.identity);   
+        eprojectile.transform.rotation = transform.rotation;
         Invoke("ShootProjectile", secondsBetweenProjectileShot);
     }
 
