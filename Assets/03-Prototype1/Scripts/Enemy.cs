@@ -11,10 +11,10 @@ public class Enemy : MonoBehaviour {
     public float speed = 5f;
 
     // Distance where Enemy turns around
-    public float leftAndRightEdge = 7f;
+    public float leftAndRightEdge = 10f;
 
     // Chance that the Enemy will change di
-    public float chanceToChangeDirection;
+    public float chanceToChangeDirection = 5f;
 
     // Rate at which Projectiles will be instantiate
     public float secondsBetweenProjectileShot = 10f;

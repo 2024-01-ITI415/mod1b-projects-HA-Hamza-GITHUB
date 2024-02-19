@@ -15,8 +15,9 @@ public class ViewSwitch : MonoBehaviour
     // Switch between first-person and top-down views
     public void ToggleView()
     {
+        Debug.Log("ToggleView called");
         if (firstPersonCamera.enabled)
-        {
+        {   
             SetTopDownView();
         }
         else

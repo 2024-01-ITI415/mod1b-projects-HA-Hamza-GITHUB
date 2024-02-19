@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eprojectilePrefab: {fileID: 858487628184055922, guid: 87f71cab7ba6f2b45a0dc707f1d08d38, type: 3}
-  speed: 5
-  leftAndRightEdge: 2
-  chanceToChangeDirection: 0.1
-  secondsBetweenProjectileShot: 10
+  speed: 10
+  leftAndRightEdge: 5
+  chanceToChangeDirection: 1
+  secondsBetweenProjectileShot: 1
