@@ -16,7 +16,7 @@ Roll-and-Survive is a game project inspired by the classic roll-a-ball project. 
 Navigate your ball through the game environment, avoiding projectiles launched by the enemy. The longer you survive, the higher your score.
 
 ## Design Frameworks
-The design of Roll-and-Survive is influenced by principles of [mention specific design frameworks, e.g., minimalism, user-centric design]. These principles guide decision-making in terms of user experience, visual aesthetics, and overall gameplay dynamics.
+The design of Roll-and-Survive is influenced by principles of MDA. As the project is rather on the simpler side (due to it being a prototype), my main example of this is: Surviving -> Updated Highscore -> Satisfied Player for achieving a new score.
 
 ## Acknowledgments
 - Roll-a-ball project (for inspiring the player controls)
